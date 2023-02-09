@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(../images/banner.jpg);
+    background-size: 90% 85%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+header h1{
+    display: inline;
+    margin-left: 5rem;
+    font-size: 3.5rem;
+}
+  nav{
+    display: inline-block;
+    position: relative;
+    top: 1.5rem;
+    margin-left: 2rem;
+}
+nav a{
+    display: inline-block;
+    background-color: rgb(88, 186, 231);
+    width: 5rem;
+    height: 2.5rem;
+    padding-top: .7rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+}
+section{
+    width: 100%;
+    min-height: 80vh ;
+    padding: 0 5rem;
+}
+section h2{
+    padding: .5rem 0;
+    font-size: 2rem;
+    border: 1px solid black;
+    text-align: center;
+}
+article{
+    padding: 2rem 0 0 1rem;
+}
+article img{
+    margin: 2rem 0;
+}
+.info-text{
+    display: inline-block;
+    width: 75%;
+   
+    margin-left: 2rem;
+}
+.info-text h3{
+    margin: .5rem 0
+}
+.info-text p {
+    text-indent: 17px;
+}
