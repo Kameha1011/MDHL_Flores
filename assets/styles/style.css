@@ -10,16 +10,18 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    height: 60vh;
+    height: 70vh;
 }
 header h1{
     display: inline;
     font-size: 3rem;
 }
 header img {
-    width: 95%;
+    width: 100%;
     height: 85%;
     align-self: flex-end;
+    object-fit: cover;
+    object-position: 80% 20%;
 }
 nav{
     position: relative;
@@ -44,6 +46,9 @@ nav a{
 nav a:hover{
     background-color: rgb(98, 145, 28);
 }
+nav .active{
+    background-color: rgb(98, 145, 28);
+}
 main{
     width: 100%;
     display: flex;
@@ -55,57 +60,75 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     height: auto;
+    background-color: rgb(88, 186, 231);
 }
 section>h2{
     width: 100%;
     padding: .5rem 0;
-    font-size: 2rem;
-    border: 1px solid black;
+    background-color: rgb(98, 145, 28);
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 2rem;
+}
+section .logo{
+    width: 200px;
+    height: 200px;
+}
+section img:nth-child(3){
+    width: 25rem;
+    height: 20rem;
+    border: 1px solid black;
 }
 article{
     width:80%;
     display: flex;
+    gap: 1rem;
     align-items: flex-start;
 }
-article img{
-    margin: 2rem 0;
+.scheduleTable{
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
-.hola{
+.politicas{
     width: 60%;
     display: block;
     margin-top: 3rem;
 }
-.hola h2{
+.politicas h2{
  margin-bottom: 1rem;
 }
-.hola p {
+.politicas p {
     text-indent: 2rem;
 }
-.hola h3, .hola p{
+.politicas h3, .politicas p, .politicas h4{
     display: inline;
 }
-.hola li {
+.politicas ol{
+    list-style-position: inside;
+}
+.politicas li {
     margin-bottom: 2rem;
 }
-.hola li:nth-child(3) li{
+.politicas li:nth-child(3) li{
     margin: 0;
 }
-.hola ul {
+.politicas ul {
     margin: 1rem 0 0 2rem;
 }
-.info-text{
+.infoText{
     display:flex;
     flex-flow: column wrap;
     width: 75%;
     padding: 2rem 0 0 2rem;
 }
-.info-text h3{
+.infoText h3{
     margin: .5rem 0
 }
-.info-text p {
+.infoText p {
     text-indent: 17px;
 }
