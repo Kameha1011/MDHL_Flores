@@ -7,28 +7,31 @@
 header{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     height: 60vh;
-    background-image: url(../images/banner.jpg);
-    background-size: 90% 85%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
 }
 header h1{
     display: inline;
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+header img {
+    width: 95%;
+    height: 85%;
+    align-self: flex-end;
 }
 nav{
     position: relative;
     top: 3rem;
+    margin-left: 2rem;
 }
 nav a{
     display: inline-block;
     background-color: rgb(88, 186, 231);
-    width: 5rem;
-    height: 2.5rem;
-    padding-top: .7rem;
+    width: 7rem;
+    height: 3rem;
+    padding: .8rem;
     margin-left: .5rem;
     text-align: center;
     text-decoration: none;
@@ -52,23 +55,47 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    min-height: 80vh ;
+    width: 95%;
+    height: auto;
 }
-section h2{
+section>h2{
     width: 100%;
     padding: .5rem 0;
     font-size: 2rem;
     border: 1px solid black;
     text-align: center;
+    margin-bottom: 2rem;
 }
 article{
-    width: 100%;
+    width:80%;
     display: flex;
     align-items: flex-start;
 }
 article img{
     margin: 2rem 0;
+}
+.hola{
+    width: 60%;
+    display: block;
+    margin-top: 3rem;
+}
+.hola h2{
+ margin-bottom: 1rem;
+}
+.hola p {
+    text-indent: 2rem;
+}
+.hola h3, .hola p{
+    display: inline;
+}
+.hola li {
+    margin-bottom: 2rem;
+}
+.hola li:nth-child(3) li{
+    margin: 0;
+}
+.hola ul {
+    margin: 1rem 0 0 2rem;
 }
 .info-text{
     display:flex;
