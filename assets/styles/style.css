@@ -6,7 +6,10 @@
 }
 header{
     width: 100%;
-    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 60vh;
     background-image: url(../images/banner.jpg);
     background-size: 90% 85%;
     background-repeat: no-repeat;
@@ -14,14 +17,11 @@ header{
 }
 header h1{
     display: inline;
-    margin-left: 5rem;
     font-size: 3.5rem;
 }
 nav{
-    display: inline-block;
     position: relative;
-    top: 1.5rem;
-    margin-left: 2rem;
+    top: 3rem;
 }
 nav a{
     display: inline-block;
@@ -41,28 +41,40 @@ nav a{
 nav a:hover{
     background-color: rgb(98, 145, 28);
 }
-section{
+main{
     width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 50vh;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
     min-height: 80vh ;
-    padding: 0 5rem;
 }
 section h2{
+    width: 100%;
     padding: .5rem 0;
     font-size: 2rem;
     border: 1px solid black;
     text-align: center;
 }
 article{
-    padding: 2rem 0 0 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
 }
 article img{
     margin: 2rem 0;
 }
 .info-text{
-    display: inline-block;
+    display:flex;
+    flex-flow: column wrap;
     width: 75%;
-   
-    margin-left: 2rem;
+    padding: 2rem 0 0 2rem;
 }
 .info-text h3{
     margin: .5rem 0
