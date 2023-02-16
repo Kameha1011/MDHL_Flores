@@ -162,6 +162,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+#showDataTable{
+  width: 70%;
+}
 #scheduleTable {
   width: 80%;
   margin-top: 2rem;
