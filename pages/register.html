@@ -58,7 +58,7 @@
                     <div>
                         <h4>Gender</h4>
                         <label>
-                            <input type="radio" name="gender" id="female" value="female">
+                            <input type="radio" name="gender" id="female" value="female" required>
                             Female
                         </label>
                         <label>
@@ -100,32 +100,17 @@
                     <legend>School Info</legend>
                     <div>
                         <h3>Which elementary school do you live near?</h3>
-                        <h4>Closest School</h4>
                         <label>
-                            <input type="radio" name="school" id="school1" value="AJ Katzenmaier">
-                            AJ Katzenmaier
+                            <select name="school" id="school" size="1" required>
+                                <option disabled selected value="">Select school</option>
+                                <option value="AJ Katzenmaier" id="school1">AJ Katzenmaier</option>
+                                <option value="Marjorie P Hart" id="school2">Marjorie P Hart</option>
+                                <option value="Greenbay" id="school3">Greenbay</option>
+                                <option value="North Elementary" id="school4">North Elementary</option>
+                                <option value="Howard A Yeager" id="school5">Howard A Yeager</option>
+                                <option value="South Elementary" id="school6">South Elementary</option>
+                            </select>
                         </label>
-                        <label>
-                            <input type="radio" name="school" id="school2" value="Marjorie P Hart">
-                            Marjorie P Hart
-                        </label>
-                        <label>
-                            <input type="radio" name="school" id="school3" value="Greenbay">
-                            Greenbay
-                        </label>
-                        <label>
-                            <input type="radio" name="school" id="school4" value="North Elementary">
-                            North Elementary
-                        </label>
-                        <label>
-                            <input type="radio" name="school" id="school5" value="Howard A Yeager">
-                            Howard A Yeager
-                        </label>
-                        <label>
-                            <input type="radio" name="school" id="school6" value="South Elementary">
-                            South Elementary
-                        </label>
-
                     </div>
                     <div>
                         <h3>What position(s) do you normally play? (check all that apply)</h3>
